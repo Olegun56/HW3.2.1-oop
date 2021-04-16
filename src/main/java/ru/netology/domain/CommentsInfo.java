@@ -5,10 +5,10 @@ public class CommentsInfo {
     private String userId;
     private String comment;
     private int answersCount;
-    private  String answerComments;
-    private  String dateOfComment;
-    private  boolean commentLikeOn;
-    private  String commentComplain;
+    private String answerComments;
+    private String dateOfComment;
+    private boolean commentLikeOn;
+    private String commentComplain;
 
     public int getCount() {
         return count;

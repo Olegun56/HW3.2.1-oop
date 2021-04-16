@@ -1,13 +1,13 @@
 package ru.netology.domain;
 
 public class Post {
-   private String postId;
-   private String imageUrl;
-   private String info;
-   private String commentsImage;
-   private String likesImage;
-   private String viewsImage;
-   private String repostsImage;
+    private String postId;
+    private String imageUrl;
+    private String info;
+    private String commentsImage;
+    private String likesImage;
+    private String viewsImage;
+    private String repostsImage;
 
     public String getPostId() {
         return postId;
