@@ -2,7 +2,7 @@ package ru.netology.domain;
 
 public class RepostsInfo {
     private int count;
-    private int[] userReposted;
+    private int userReposted;
 
     public int getCount() {
         return count;
@@ -12,11 +12,11 @@ public class RepostsInfo {
         this.count = count;
     }
 
-    public int[] getUserReposted() {
+    public int getUserReposted() {
         return userReposted;
     }
 
-    public void setUserReposted(int[] userReposted) {
+    public void setUserReposted(int userReposted) {
         this.userReposted = userReposted;
     }
 }

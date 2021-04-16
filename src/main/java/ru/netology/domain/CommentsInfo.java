@@ -2,8 +2,8 @@ package ru.netology.domain;
 
 public class CommentsInfo {
     private int count;
-    private int[] canPost;
-    private int[] groupCanPost;
+    private boolean canPost;
+    private int groupCanPost;
     private boolean canClose;
     private boolean canOpen;
 
@@ -15,19 +15,19 @@ public class CommentsInfo {
         this.count = count;
     }
 
-    public int[] getCanPost() {
+    public boolean isCanPost() {
         return canPost;
     }
 
-    public void setCanPost(int[] canPost) {
+    public void setCanPost(boolean canPost) {
         this.canPost = canPost;
     }
 
-    public int[] getGroupCanPost() {
+    public int getGroupCanPost() {
         return groupCanPost;
     }
 
-    public void setGroupCanPost(int[] groupCanPost) {
+    public void setGroupCanPost(int groupCanPost) {
         this.groupCanPost = groupCanPost;
     }
 

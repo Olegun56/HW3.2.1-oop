@@ -1,6 +1,15 @@
 package ru.netology.domain;
 
 public class Post {
+    private CommentsInfo commentsInfo;
+    private LikesInfo likesInfo;
+    private RepostsInfo repostsInfo;
+    private ViewsInfo viewsInfo;
+    private Copyright copyright;
+    private Donut donut;
+    private Geo geo;
+    private PostSource postSource;
+
     private int id;
     private int ownerId;
     private int fromId;
@@ -9,14 +18,14 @@ public class Post {
     private String text;
     private int replyOwnerId;
     private int replyPostId;
-    private int[] friendsOnly;
+    private int friendsOnly;
     private String postType;
     private int signerId;
-    private int[] canPin;
-    private int[] canDelete;
-    private int[] canEdit;
-    private int[] isPinned;
-    private int[] markedAsAds;
+    private boolean canPin;
+    private boolean canDelete;
+    private boolean canEdit;
+    private boolean isPinned;
+    private int markedAsAds;
     private boolean isFavorite;
     private int postponedId;
 
@@ -84,11 +93,11 @@ public class Post {
         this.replyPostId = replyPostId;
     }
 
-    public int[] getFriendsOnly() {
+    public int getFriendsOnly() {
         return friendsOnly;
     }
 
-    public void setFriendsOnly(int[] friendsOnly) {
+    public void setFriendsOnly(int friendsOnly) {
         this.friendsOnly = friendsOnly;
     }
 
@@ -108,43 +117,43 @@ public class Post {
         this.signerId = signerId;
     }
 
-    public int[] getCanPin() {
+    public boolean isCanPin() {
         return canPin;
     }
 
-    public void setCanPin(int[] canPin) {
+    public void setCanPin(boolean canPin) {
         this.canPin = canPin;
     }
 
-    public int[] getCanDelete() {
+    public boolean isCanDelete() {
         return canDelete;
     }
 
-    public void setCanDelete(int[] canDelete) {
+    public void setCanDelete(boolean canDelete) {
         this.canDelete = canDelete;
     }
 
-    public int[] getCanEdit() {
+    public boolean isCanEdit() {
         return canEdit;
     }
 
-    public void setCanEdit(int[] canEdit) {
+    public void setCanEdit(boolean canEdit) {
         this.canEdit = canEdit;
     }
 
-    public int[] getIsPinned() {
+    public boolean isPinned() {
         return isPinned;
     }
 
-    public void setIsPinned(int[] isPinned) {
-        this.isPinned = isPinned;
+    public void setPinned(boolean pinned) {
+        isPinned = pinned;
     }
 
-    public int[] getMarkedAsAds() {
+    public int getMarkedAsAds() {
         return markedAsAds;
     }
 
-    public void setMarkedAsAds(int[] markedAsAds) {
+    public void setMarkedAsAds(int markedAsAds) {
         this.markedAsAds = markedAsAds;
     }
 
